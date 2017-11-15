@@ -41,7 +41,7 @@ cr_list * cr_list_new(size_t elem_size);
 void cr_list_destroy(cr_list * list);
 
 /**
- * @brief Macro for creating lists of pointers (i.e. most lists)
+ * @brief Macro for creating lists of void pointers.
  */
 #define cr_list_newP() cr_list_new(sizeof(void *))
 
